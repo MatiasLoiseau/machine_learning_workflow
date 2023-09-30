@@ -51,8 +51,8 @@ El repositorio se organiza de la siguiente manera:
 
 ## Pruebas extras que no se refieren a FE
 
-1. XGBoost
-2.
+1. XGBoost.
+2. Otro Feature Selection que no sea canaritos asesinos.
 
 ## Experimentos
 
