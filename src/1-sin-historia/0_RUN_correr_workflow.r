@@ -17,4 +17,4 @@ source("~/machine_learning_workflow/src/1-sin-historia/4_TS_training_strategy.r"
 
 # ultimos pasos, muy lentos
 source("~/machine_learning_workflow/src/1-sin-historia/5_HT_lightgbm.r")
-source("~/machine_learning_workflow/src/1-sin-historia/5_ZZ_final.r")
+source("~/machine_learning_workflow/src/1-sin-historia/6_ZZ_final.r")
