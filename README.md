@@ -70,6 +70,46 @@ Acá se testea cuanta ganancia da el modelo si **NO** se aplica Feature Engineer
 
 **Resultados:** ¿¿??
 
+### Training Strategy
+
+#### Grupo A
+
+```
+PARAM$future <- c(202109)
+PARAM$final_train <- c(
+ 202107, 202106, 202105, 202104, 202103, 202102,
+ 202101, 202012, 202011, 202010, 202009, 202008, 202002, 202001, 201912,
+ 201911, 201910, 201909
+)
+
+PARAM$train$training <- c(
+ 202105, 202104, 202103, 202102, 202101,
+ 202012, 202011, 202010, 202009, 202008, 202002, 202001, 201912, 201911,
+ 201910, 201909, 201908, 201907
+)
+
+PARAM$train$validation <- c(202106)
+PARAM$train$testing <- c(202107)
+```
+
+#### Grupo B
+
+```
+PARAM$future <- c(202107)
+PARAM$final_train <- c(
+ 202105, 202104, 202103, 202102,
+ 202101, 202012, 202011, 202010, 202009, 202008, 202002, 202001, 201912,
+ 201911, 201910, 201909, 201908, 201907
+)
+PARAM$train$training <- c(
+ 202103, 202102, 202101,
+ 202012, 202011, 202010, 202009, 202008, 202002, 202001, 201912, 201911,
+ 201910, 201909, 201908, 201907, 201906, 201905
+)
+PARAM$train$validation <- c(202104)
+PARAM$train$testing <- c(202105)
+```
+
 ## Recursos extras
 
 Enlaces a recursos externos, bibliografía recomendada y otros materiales de apoyo.
