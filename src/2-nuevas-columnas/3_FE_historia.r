@@ -470,6 +470,37 @@ GrabarOutput()
 write_yaml(PARAM, file = "parametros.yml") # escribo parametros utilizados
 
 #--------------------------------------
+# CALCULOS DE NUEVAS COLUMNAS
+
+
+dataset$visa1 <- with(dataset, Visa_mconsumospesos / Visa_mlimitecompra)
+dataset$visa2 <- with(dataset, Visa_cconsumos / Visa_mlimitecompra)
+dataset$visa3 <- with(dataset, Visa_mconsumospesos / Visa_msaldopesos)
+dataset$master1 <- with(dataset, Master_mconsumospesos / Master_mlimitecompra)
+dataset$master2 <- with(dataset, Master_cconsumos / Master_mlimitecompra)
+dataset$master3 <- with(dataset, Master_mconsumospesos / Master_msaldopesos)
+dataset$payroll_edad <- with(dataset, mpayroll / cliente_edad)
+dataset$payroll_edad2 <- with(dataset, mpayroll2 / cliente_edad)
+
+#Porcentaje de Utilización del Crédito:** Puedes calcular el porcentaje de utilización del crédito dividiendo el saldo total entre el límite de financiación ("Visa_msaldototal" / "Visa_mfinanciacion_limite") y multiplicando por 100 para obtener un porcentaje.
+dataset$utilizacion_credito_visa <- with(dataset, (Visa_msaldototal / Visa_mfinanciacion_limite)*100)
+dataset$utilizacion_credito_master <- with(dataset, (Master_msaldototal / Master_mfinanciacion_limite)*100)
+
+#Pago Mínimo en Porcentaje: Puedes calcular el porcentaje del pago mínimo en relación con el saldo total dividiendo "Visa_mpagominimo" entre "Visa_msaldototal" y multiplicando por 100.
+dataset$minimo_porcentaje_visa <- with(dataset, (Visa_mpagominimo / Visa_msaldototal)*100)
+dataset$minimo_porcentaje_master <- with(dataset, (Master_mpagominimo / Master_msaldototal)*100)
+
+#Porcentaje de Consumo en Pesos vs. Dólares: Calcula el porcentaje del consumo total que está en pesos y en dólares, dividiendo "Visa_mconsumospesos" y "Visa_mconsumosdolares" entre "Visa_mconsumototal" y multiplicando por 100.
+dataset$consumo_pesos_dolares_visa <- with(dataset, (Visa_mconsumospesos / Visa_mconsumosdolares)*100)
+dataset$consumo_pesos_dolares_master <- with(dataset, (Master_mconsumospesos / Master_mconsumosdolares)*100)
+
+# Relación entre Pagos y Consumo: Calcula la relación entre el monto total pagado y el consumo total ("Visa_mpagado" / "Visa_mconsumototal") para ver cuánto se paga en relación con el consumo.
+dataset$pagos_consumos_visa <- with(dataset, Visa_mpagado / Visa_mconsumototal)
+dataset$pagos_consumos_master <- with(dataset, Master_mpagado / Master_mconsumototal)
+
+
+
+#--------------------------------------
 # estas son las columnas a las que se puede agregar
 #  lags o media moviles ( todas menos las obvias )
 cols_lagueables <- copy(setdiff(
