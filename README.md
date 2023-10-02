@@ -68,7 +68,7 @@ Este experimento se usa como base para los demás.
 
 Acá se testea cuanta ganancia da el modelo si **NO** se aplica Feature Engineering.
 
-**Resultados:** ¿¿??
+**Resultados:** $57.826.830
 
 ### Training Strategy
 
