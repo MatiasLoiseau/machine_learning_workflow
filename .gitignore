@@ -6,6 +6,8 @@
 
 exp/
 src/.ipynb_checkpoints/
+src/testing-workspace/
+
 # Session Data files
 .RData
 .RDataTmp
