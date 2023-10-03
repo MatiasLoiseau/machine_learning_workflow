@@ -82,7 +82,7 @@ Vamos a probar una tendencia de 6 meses y el mínimo
 
 Vamos a probar una tendencia de 6 meses y el máximo
 
-**Resultados:** ¿¿??
+**Resultados:** $65.877.538
 
 ### 5. Usar una tendencia y promedio
 
