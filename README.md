@@ -72,6 +72,48 @@ Vamos a probar una tendencia de 6 meses y otra de 12 meses. Sin configurar ning�
 
 **Resultados:** ¿¿??
 
+### 3. Usar duna tendencia y minimo
+
+Vamos a probar una tendencia de 6 meses y el mínimo
+
+**Resultados:** ¿¿??
+
+### 4. Usar una tendencia y máximo
+
+Vamos a probar una tendencia de 6 meses y el máximo
+
+**Resultados:** ¿¿??
+
+### 5. Usar una tendencia y promedio
+
+Vamos a probar una tendencia de 6 meses y el promedio
+
+**Resultados:** ¿¿??
+
+### 6. Usar una tendencia y ratioavg
+
+Vamos a probar una tendencia de 6 meses y ratioavg
+
+**Resultados:** ¿¿??
+
+### 7. Usar una tendencia y ratiomax
+
+Vamos a probar una tendencia de 6 meses y ratiomax
+
+**Resultados:** ¿¿??
+
+### 8. Usar una tendencia y todo
+
+Vamos a probar una tendencia de 6 meses y con todas las opciones disponibles
+
+**Resultados:** ¿¿??
+
+### 9. Usar dos tendencias y todo
+
+Vamos a probar una tendencia de 6 meses y otra de 12 meses. Además de todas las opciones disponibles.
+
+**Resultados:** ¿¿??
+
 ### Training Strategy
 
 #### Grupo A
