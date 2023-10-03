@@ -33,26 +33,22 @@ El repositorio se organiza de la siguiente manera:
 
 ### Lista de posibles pruebas
 
-1. Polynomial features
-2. Cambiar la cantidad de lags
-3. Statics Aggregation (min,max,std-dev)
-4. Ver si no hay que aplicar lags a todas las variables
-5. Crear nuevas variables:
-   a. Visa_consumo / Visa_limite_compra
-   b. mcaja_ahorro + mcuenta_corriente + mplazo_fijo + minversiones1 + minversiones2
-   c. mpayroll / cliente_edad
-6. Detección de outliers
-7. Categorical encoding
-8. Variable transofrmation
-9. Scaling (min-max scaling and normalization)
-10. Rolling window statistics
-11. Probar la libreria ([escrita en Python](https://github.com/feature-engine/feature_engine)) de [Soledad Galli](https://github.com/solegalli)
-12. 
+1. Cambiar la cantidad de lags
+2. Ver si no hay que aplicar lags a todas las variables
+3. Rolling window statistics
+4. Probar la libreria ([escrita en Python](https://github.com/feature-engine/feature_engine)) de [Soledad Galli](https://github.com/solegalli)
+5. Probar combinaciones de tendencias
 
 ## Pruebas extras que no se refieren a FE
 
 1. XGBoost.
 2. Otro Feature Selection que no sea canaritos asesinos.
+3. Polynomial features
+4. Statics Aggregation (min,max,std-dev)
+5. Detección de outliers
+6. Categorical encoding
+7. Variable transofrmation
+8. Scaling (min-max scaling and normalization)
 
 ## Experimentos
 
@@ -69,6 +65,12 @@ Este experimento se usa como base para los demás.
 Acá se testea cuanta ganancia da el modelo si **NO** se aplica Feature Engineering.
 
 **Resultados:** $57.826.830
+
+### 2. Usar dos tendencias
+
+Vamos a probar una tendencia de 6 meses y otra de 12 meses. Sin configurar ningúna otra variable.
+
+**Resultados:** ¿¿??
 
 ### Training Strategy
 
