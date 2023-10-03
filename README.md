@@ -114,6 +114,12 @@ Vamos a probar una tendencia de 6 meses y otra de 12 meses. Además de todas las
 
 **Resultados:** ¿¿??
 
+### 10. Sin tendencia pero con los dos lags
+
+Prueba sin usar las tendencias pero si con los lags
+
+**Resultados:** ¿¿??
+
 ### Training Strategy
 
 #### Grupo A
