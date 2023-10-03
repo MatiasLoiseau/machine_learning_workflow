@@ -58,7 +58,7 @@ El repositorio se organiza de la siguiente manera:
 
 Este experimento se usa como base para los demás. 
 
-**Resultados:** ¿¿??
+**Resultados:** $68.885.503
 
 ### 1. Eliminando Feature Engineering
 
