@@ -72,11 +72,11 @@ Vamos a probar una tendencia de 6 meses y otra de 12 meses. Sin configurar ning�
 
 **Resultados:** ¿¿??
 
-### 3. Usar duna tendencia y minimo
+### 3. Usar una tendencia y minimo
 
 Vamos a probar una tendencia de 6 meses y el mínimo
 
-**Resultados:** ¿¿??
+**Resultados:** $65.620.965
 
 ### 4. Usar una tendencia y máximo
 
