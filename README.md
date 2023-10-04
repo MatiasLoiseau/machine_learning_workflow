@@ -60,11 +60,15 @@ Este experimento se usa como base para los demás.
 
 **Resultado:** $68.885.503
 
+**Tiempo de ejecución:** 16 horas, 59 minutos
+
 ### 1. Eliminando Feature Engineering
 
 Acá se testea cuanta ganancia da el modelo si **NO** se aplica Feature Engineering.
 
 **Resultado:** $57.826.830
+
+**Tiempo de ejecución:** 2 horas, 40 minutos
 
 ### 2. Usar dos tendencias
 
@@ -72,11 +76,15 @@ Vamos a probar una tendencia de 6 meses y otra de 12 meses. Sin configurar ning�
 
 **Resultado:** $68.794.142
 
+**Tiempo de ejecución:** 23 horas, 41 minutos **(con un error en el medio)**
+
 ### 3. Usar una tendencia y minimo
 
 Vamos a probar una tendencia de 6 meses y el mínimo
 
 **Resultado:** $65.620.965
+
+**Tiempo de ejecución:** 10 horas, 9 minutos
 
 ### 4. Usar una tendencia y máximo
 
@@ -84,11 +92,15 @@ Vamos a probar una tendencia de 6 meses y el máximo
 
 **Resultado:** $65.877.538
 
+**Tiempo de ejecución:** 17 horas, 33 minutos
+
 ### 5. Usar una tendencia y promedio
 
 Vamos a probar una tendencia de 6 meses y el promedio
 
 **Resultado:** $66.170.215
+
+**Tiempo de ejecución:** 13 horas, 29 minutos
 
 ### 6. Usar una tendencia y ratioavg
 
@@ -96,11 +108,15 @@ Vamos a probar una tendencia de 6 meses y ratioavg
 
 **Resultado:** $66.482.658
 
+**Tiempo de ejecución:** 11 horas, 33 minutos
+
 ### 7. Usar una tendencia y ratiomax
 
 Vamos a probar una tendencia de 6 meses y ratiomax
 
 **Resultado:** ¿¿??
+
+**Tiempo de ejecución:**
 
 ### 8. Usar una tendencia y todo
 
@@ -108,17 +124,23 @@ Vamos a probar una tendencia de 6 meses y con todas las opciones disponibles
 
 **Resultado:** ¿¿??
 
+**Tiempo de ejecución:**
+
 ### 9. Usar dos tendencias y todo
 
 Vamos a probar una tendencia de 6 meses y otra de 12 meses. Además de todas las opciones disponibles.
 
 **Resultado:** ¿¿??
 
+**Tiempo de ejecución:**
+
 ### 10. Sin tendencia pero con los dos lags
 
 Prueba sin usar las tendencias pero si con los lags
 
 **Resultado:** ¿¿??
+
+**Tiempo de ejecución:**
 
 ### Training Strategy
 
