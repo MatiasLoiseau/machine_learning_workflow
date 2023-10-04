@@ -94,7 +94,7 @@ Vamos a probar una tendencia de 6 meses y el promedio
 
 Vamos a probar una tendencia de 6 meses y ratioavg
 
-**Resultados:** ¿¿??
+**Resultados:** $66.482.658
 
 ### 7. Usar una tendencia y ratiomax
 
