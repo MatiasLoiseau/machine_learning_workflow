@@ -58,67 +58,67 @@ El repositorio se organiza de la siguiente manera:
 
 Este experimento se usa como base para los demás. 
 
-**Resultados:** $68.885.503
+**Resultado:** $68.885.503
 
 ### 1. Eliminando Feature Engineering
 
 Acá se testea cuanta ganancia da el modelo si **NO** se aplica Feature Engineering.
 
-**Resultados:** $57.826.830
+**Resultado:** $57.826.830
 
 ### 2. Usar dos tendencias
 
 Vamos a probar una tendencia de 6 meses y otra de 12 meses. Sin configurar ningúna otra variable.
 
-**Resultados:** ¿¿??
+**Resultado:** $68.794.142
 
 ### 3. Usar una tendencia y minimo
 
 Vamos a probar una tendencia de 6 meses y el mínimo
 
-**Resultados:** $65.620.965
+**Resultado:** $65.620.965
 
 ### 4. Usar una tendencia y máximo
 
 Vamos a probar una tendencia de 6 meses y el máximo
 
-**Resultados:** $65.877.538
+**Resultado:** $65.877.538
 
 ### 5. Usar una tendencia y promedio
 
 Vamos a probar una tendencia de 6 meses y el promedio
 
-**Resultados:** ¿¿??
+**Resultado:** ¿¿??
 
 ### 6. Usar una tendencia y ratioavg
 
 Vamos a probar una tendencia de 6 meses y ratioavg
 
-**Resultados:** $66.482.658
+**Resultado:** $66.482.658
 
 ### 7. Usar una tendencia y ratiomax
 
 Vamos a probar una tendencia de 6 meses y ratiomax
 
-**Resultados:** ¿¿??
+**Resultado:** ¿¿??
 
 ### 8. Usar una tendencia y todo
 
 Vamos a probar una tendencia de 6 meses y con todas las opciones disponibles
 
-**Resultados:** ¿¿??
+**Resultado:** ¿¿??
 
 ### 9. Usar dos tendencias y todo
 
 Vamos a probar una tendencia de 6 meses y otra de 12 meses. Además de todas las opciones disponibles.
 
-**Resultados:** ¿¿??
+**Resultado:** ¿¿??
 
 ### 10. Sin tendencia pero con los dos lags
 
 Prueba sin usar las tendencias pero si con los lags
 
-**Resultados:** ¿¿??
+**Resultado:** ¿¿??
 
 ### Training Strategy
 
