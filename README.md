@@ -88,7 +88,7 @@ Vamos a probar una tendencia de 6 meses y el máximo
 
 Vamos a probar una tendencia de 6 meses y el promedio
 
-**Resultado:** ¿¿??
+**Resultado:** $66.170.215
 
 ### 6. Usar una tendencia y ratioavg
 
