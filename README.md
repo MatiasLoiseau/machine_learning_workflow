@@ -114,25 +114,25 @@ Vamos a probar una tendencia de 6 meses y ratioavg
 
 Vamos a probar una tendencia de 6 meses y ratiomax
 
-**Resultado:** ¿¿??
+**Resultado:** $68.224.125
 
-**Tiempo de ejecución:**
+**Tiempo de ejecución:** 38 horas, 56 minutos
 
 ### 8. Usar una tendencia y todo
 
 Vamos a probar una tendencia de 6 meses y con todas las opciones disponibles
 
-**Resultado:** ¿¿??
+**Resultado:** $67.515.770
 
-**Tiempo de ejecución:**
+**Tiempo de ejecución:** 31 horas, 45 minutos
 
 ### 9. Usar dos tendencias y todo
 
 Vamos a probar una tendencia de 6 meses y otra de 12 meses. Además de todas las opciones disponibles.
 
-**Resultado:** ¿¿??
+**Resultado:** $66.598.695
 
-**Tiempo de ejecución:**
+**Tiempo de ejecución:** 21 horas, 36 minutos
 
 ### 10. Sin tendencia pero con los dos lags
 
