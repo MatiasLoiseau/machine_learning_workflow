@@ -136,7 +136,23 @@ Vamos a probar una tendencia de 6 meses y otra de 12 meses. Además de todas las
 
 ### 10. Sin tendencia pero con los dos lags
 
-Prueba sin usar las tendencias pero si con los lags
+Prueba sin usar las tendencias pero sí con los lags
+
+**Resultado:** ¿¿??
+
+**Tiempo de ejecución:**
+
+### 11. Dos tendencias, 3 y 6 meses
+
+Prueba con dos tendencias, una de 3 meses y otra de 6 meses
+
+**Resultado:** ¿¿??
+
+**Tiempo de ejecución:**
+
+### 12. Dos tendencias, 3 y 6 meses y todo.
+
+Prueba con dos tendencias, una de 3 meses y otra de 6 meses. Además se calculan todas las variables juntas.
 
 **Resultado:** ¿¿??
 
@@ -178,6 +194,7 @@ PARAM$train$training <- c(
  202012, 202011, 202010, 202009, 202008, 202002, 202001, 201912, 201911,
  201910, 201909, 201908, 201907, 201906, 201905
 )
+
 PARAM$train$validation <- c(202104)
 PARAM$train$testing <- c(202105)
 ```
