@@ -138,9 +138,9 @@ Vamos a probar una tendencia de 6 meses y otra de 12 meses. Además de todas las
 
 Prueba sin usar las tendencias pero sí con los lags
 
-**Resultado:** ¿¿??
+**Resultado:** $65.809.157
 
-**Tiempo de ejecución:**
+**Tiempo de ejecución:** 13 horas, 38 minutos
 
 ### 11. Dos tendencias, 3 y 6 meses
 
