@@ -158,6 +158,14 @@ Prueba con dos tendencias, una de 3 meses y otra de 6 meses. Además se calculan
 
 **Tiempo de ejecución:**
 
+### 13. Dos tendencias, 3 y todo, 6 sola
+
+Prueba con dos tendencias, una de 3 meses con todas las opciones activadas y otra de 6 meses pero sola.
+
+**Resultado:** ¿¿??
+
+**Tiempo de ejecución:**
+
 ### Training Strategy
 
 #### Grupo A
