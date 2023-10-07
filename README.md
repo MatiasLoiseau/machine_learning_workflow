@@ -30,6 +30,8 @@ El repositorio se organiza de la siguiente manera:
 ### Bibliografía mia
 - https://www.kaggle.com/code/prashant111/a-reference-guide-to-feature-engineering-methods#5.-Variable-Transformation-
 - https://medium.com/data-science-at-microsoft/introduction-to-feature-engineering-for-time-series-forecasting-620aa55fcab0
+- https://medium.com/dataman-in-ai/explain-your-model-with-the-shap-values-bc36aac4de3d
+- https://towardsdatascience.com/explain-any-models-with-the-shap-values-use-the-kernelexplainer-79de9464897a
 
 ### Lista de posibles pruebas
 
