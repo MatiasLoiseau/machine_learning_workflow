@@ -154,7 +154,7 @@ Prueba con dos tendencias, una de 3 meses y otra de 6 meses
 
 Prueba con dos tendencias, una de 3 meses y otra de 6 meses. Además se calculan todas las variables juntas.
 
-**Resultado:** ¿¿??
+**Resultado:** $65.534.421
 
 **Tiempo de ejecución:**
 
@@ -206,6 +206,29 @@ PARAM$train$training <- c(
 PARAM$train$validation <- c(202104)
 PARAM$train$testing <- c(202105)
 ```
+
+## Importancia de Feature Engineering
+1. Feature Engineering
+2. Entrenar en varios meses
+3. Variables históricas
+4. Qué meses usar para val/test
+5. Vars random forest
+6. FE intra mes
+
+## Importancia de Algoritmos de Machine Learning
+1. LightGBM/XGBoost
+2. Deep Learning
+3. Support Vector Machine
+4. Random Forest
+5. Arboles Azarosos
+6. Logistic Regression
+7. Árboles de decisión
+8. Naive Bayes
+
+## Importancia de Hyperparam Tuning
+1. Bayesian Optimization
+2. Random search
+3. Grid Search
 
 ## Recursos extras
 
