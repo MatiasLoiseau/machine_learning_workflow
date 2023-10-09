@@ -148,9 +148,9 @@ Prueba sin usar las tendencias pero sí con los lags
 
 Prueba con dos tendencias, una de 3 meses y otra de 6 meses
 
-**Resultado:** ¿¿??
+**Resultado:** $67.320.155
 
-**Tiempo de ejecución:**
+**Tiempo de ejecución:** 45 horas, 28 minutos
 
 ### 12. Dos tendencias, 3 y 6 meses y todo.
 
@@ -158,15 +158,15 @@ Prueba con dos tendencias, una de 3 meses y otra de 6 meses. Además se calculan
 
 **Resultado:** $65.534.421
 
-**Tiempo de ejecución:**
+**Tiempo de ejecución:** 17 horas, 33 minutos
 
 ### 13. Dos tendencias, 3 y todo, 6 sola
 
 Prueba con dos tendencias, una de 3 meses con todas las opciones activadas y otra de 6 meses pero sola.
 
-**Resultado:** ¿¿??
+**Resultado:** $67.626.601
 
-**Tiempo de ejecución:**
+**Tiempo de ejecución:** 27 horas, 57 minutos
 
 ### Training Strategy
 
