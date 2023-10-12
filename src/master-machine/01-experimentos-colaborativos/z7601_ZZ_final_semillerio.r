@@ -34,7 +34,7 @@ PARAM$kaggle$envios_salto  <-   500L
 PARAM$graficar$envios_hasta  <- 20000L  #para el caso que deba graficar
 PARAM$graficar$ventana_suavizado  <- 2001L
 
-PARAM$home  <- "~/buckets/b2/"
+PARAM$home  <- "~/buckets/b1/"
 # FIN Parametros del script
 
 OUTPUT  <- list()
@@ -206,28 +206,28 @@ ksemillas  <- sample(primos)[ 1:PARAM$semillerio ]   #me quedo con PARAM$semille
 
 
 #creo la carpeta donde va el experimento
-dir.create( paste0( PARAM$home, "exp/", PARAM$experimento, "/"), showWarnings= FALSE )
-setwd(paste0( PARAM$home, "exp/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
+dir.create( paste0( PARAM$home, "exp/master-machine/", PARAM$experimento, "/"), showWarnings= FALSE )
+setwd(paste0( PARAM$home, "exp/master-machine/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
 
 
 GrabarOutput()
 write_yaml( PARAM, file= "parametros.yml" )   #escribo parametros utilizados
 
 #leo la salida de la optimizaciob bayesiana
-arch_log  <- paste0( PARAM$home, "exp/", PARAM$exp_input, "/BO_log.txt" )
+arch_log  <- paste0( PARAM$home, "exp/master-machine/", PARAM$exp_input, "/BO_log.txt" )
 tb_log  <- fread( arch_log )
 setorder( tb_log, -ganancia )
 
 #leo el nombre del expermento de la Training Strategy
-arch_TS  <- paste0( PARAM$home, "exp/", PARAM$exp_input, "/TrainingStrategy.txt" )
+arch_TS  <- paste0( PARAM$home, "exp/master-machine/", PARAM$exp_input, "/TrainingStrategy.txt" )
 TS  <- readLines( arch_TS, warn= FALSE )
 
 #leo el dataset donde voy a entrenar el modelo final
-arch_dataset  <- paste0( PARAM$home, "exp/", TS, "/dataset_train_final.csv.gz" )
+arch_dataset  <- paste0( PARAM$home, "exp/master-machine/", TS, "/dataset_train_final.csv.gz" )
 dataset  <- fread( arch_dataset )
 
 #leo el dataset donde voy a aplicar el modelo final
-arch_future  <- paste0( PARAM$home, "exp/", TS, "/dataset_future.csv.gz" )
+arch_future  <- paste0( PARAM$home, "exp/master-machine/", TS, "/dataset_future.csv.gz" )
 dfuture  <- fread( arch_future )
 
 # logical que me indica si los dtos de future tienen la clase con valores, y NO va para Kaggle

@@ -35,7 +35,7 @@ PARAM$train$undersampling  <- 0.05   # 1.0 significa NO undersampling ,  0.1  es
 
 PARAM$train$semilla  <- 374063  # cambiar por su propia semilla  !!!
 
-PARAM$home  <- "~/buckets/b2/"
+PARAM$home  <- "~/buckets/b1/"
 # FIN Parametros del script
 
 
@@ -66,13 +66,13 @@ setwd( PARAM$home )
 
 #cargo el dataset donde voy a entrenar
 #esta en la carpeta del exp_input y siempre se llama  dataset.csv.gz
-dataset_input  <- paste0( "./exp/", PARAM$exp_input, "/dataset.csv.gz" )
+dataset_input  <- paste0( "./exp/master-machine/", PARAM$exp_input, "/dataset.csv.gz" )
 dataset  <- fread( dataset_input )
 
 
 #creo la carpeta donde va el experimento
-dir.create( paste0( "./exp/", PARAM$experimento, "/"), showWarnings = FALSE )
-setwd(paste0( "./exp/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
+dir.create( paste0( "./exp/master-machine/", PARAM$experimento, "/"), showWarnings = FALSE )
+setwd(paste0( "./exp/master-machine/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
 
 GrabarOutput()
 write_yaml( PARAM, file= "parametros.yml" )   #escribo parametros utilizados

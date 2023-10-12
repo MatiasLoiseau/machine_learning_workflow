@@ -86,7 +86,7 @@ PARAM$bo_lgb <- makeParamSet(
 #si usted es ambicioso, y tiene paciencia, podria subir este valor a 100
 PARAM$bo_iteraciones  <- 50  #iteraciones de la Optimizacion Bayesiana
 
-PARAM$home  <- "~/buckets/b2/"
+PARAM$home  <- "~/buckets/b1/"
 
 # FIN Parametros del script
 
@@ -103,7 +103,7 @@ GrabarOutput  <- function()
 #graba a un archivo los componentes de lista
 #para el primer registro, escribe antes los titulos
 
-exp_log  <- function( reg, arch=NA, folder="./exp/", ext=".txt", verbose=TRUE )
+exp_log  <- function( reg, arch=NA, folder="./exp/master-machine/", ext=".txt", verbose=TRUE )
 {
   archivo  <- arch
   if( is.na(arch) )  archivo  <- paste0(  folder, substitute( reg), ext )
@@ -411,7 +411,7 @@ setwd( PARAM$home )
 
 #cargo el dataset donde voy a entrenar
 #esta en la carpeta del exp_input y siempre se llama  dataset_training.csv.gz
-dataset_input  <- paste0( "./exp/", PARAM$exp_input, "/dataset_training.csv.gz" )
+dataset_input  <- paste0( "./exp/master-machine/", PARAM$exp_input, "/dataset_training.csv.gz" )
 dataset  <- fread( dataset_input )
 
 dataset[ , azar :=  NULL ]
@@ -423,8 +423,8 @@ if( ! ("fold_test"     %in% colnames(dataset) ) ) stop("Error, el dataset no tie
 if( dataset[ fold_train==1, .N ] == 0 ) stop("Error, en el dataset no hay registros con fold_train==1 \n")
 
 #creo la carpeta donde va el experimento
-dir.create( paste0( "./exp/", PARAM$experimento, "/"), showWarnings = FALSE )
-setwd(paste0( "./exp/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
+dir.create( paste0( "./exp/master-machine/", PARAM$experimento, "/"), showWarnings = FALSE )
+setwd(paste0( "./exp/master-machine/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
 
 GrabarOutput()
 write_yaml( PARAM, file= "parametros.yml" )   #escribo parametros utilizados
@@ -584,8 +584,8 @@ cat( format(Sys.time(), "%Y%m%d %H%M%S"),"\n",
 # sino Google me sigue facturando a pesar de no estar procesando nada
 # Give them nothing, but take from them everything.
 
-system( "sleep 10  &&
-        export NAME=$(curl -X GET http://metadata.google.internal/computeMetadata/v1/instance/name -H 'Metadata-Flavor: Google') &&
-        export ZONE=$(curl -X GET http://metadata.google.internal/computeMetadata/v1/instance/zone -H 'Metadata-Flavor: Google') &&
-        gcloud --quiet compute instances delete $NAME --zone=$ZONE",
-        wait=FALSE )
+#system( "sleep 10  &&
+#        export NAME=$(curl -X GET http://metadata.google.internal/computeMetadata/v1/instance/name -H 'Metadata-Flavor: Google') &&
+#        export ZONE=$(curl -X GET http://metadata.google.internal/computeMetadata/v1/instance/zone -H 'Metadata-Flavor: Google') &&
+#        gcloud --quiet compute instances delete $NAME --zone=$ZONE",
+#        wait=FALSE )
