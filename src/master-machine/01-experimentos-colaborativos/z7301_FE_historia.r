@@ -198,7 +198,7 @@ TendenciaYmuchomas  <- function( dataset, cols, ventana=6, tendencia=TRUE, minim
 #------------------------------------------------------------------------------
 #agrega al dataset nuevas variables {0,1} que provienen de las hojas de un Random Forest
 
-AgregaVarRandomForest  <- function( num.trees, max.depth, min.node.size, mtry, semilla)
+AgregaVarRandomForest  <- function( num.trees, max.depth, min.node.size, mtry, semilla, splitrule, sample.fraction)
 {
   gc()
   dataset[ , clase01:= ifelse( clase_ternaria=="CONTINUA", 0, 1 ) ]
