@@ -15,11 +15,11 @@ require("yaml")
 
 #Parametros del script
 PARAM  <- list()
-PARAM$experimento  <- "CA7100"
+PARAM$experimento  <- "CA7101"
 PARAM$dataset  <- "./datasets/competencia_2023.csv.gz"
 
 PARAM$metodo  <- "MachineLearning"     #valores posibles  "MachineLearning"  "EstadisticaClasica" "Ninguno"
-PARAM$home  <- "~/buckets/b1/"
+PARAM$home  <- "~/buckets/b2/"
 # FIN Parametros del script
 
 OUTPUT  <- list()
@@ -41,9 +41,14 @@ GrabarOutput  <- function()
 #------------------------------------------------------------------------------
 CorregirCampoMes  <- function( pcampo, pmeses )
 {
-  tbl <- dataset[ , list( "v1" = shift( get(pcampo), 1, type="lag" ),
-                          "v2" = shift( get(pcampo), 1, type="lead" )
-                        ), 
+  tbl <- dataset[ , list(
+    "v1" = shift(get(pcampo), 1, type = "lag"),
+    "v2" = shift(get(pcampo), 2, type = "lag"),
+    "v3" = shift(get(pcampo), 3, type = "lag"),
+    "v4" = shift(get(pcampo), 1, type = "lead"),
+    "v5" = shift(get(pcampo), 2, type = "lead"),
+    "v6" = shift(get(pcampo), 3, type = "lead")
+  ),
                    by=numero_de_cliente ]
   
   tbl[ , numero_de_cliente := NULL ]

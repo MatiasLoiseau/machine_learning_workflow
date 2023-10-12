@@ -22,9 +22,9 @@ require("lightgbm")
 
 #Parametros del script
 PARAM  <- list()
-PARAM$experimento <- "FE7300"
+PARAM$experimento <- "FE7301"
 
-PARAM$exp_input  <- "DR7200"
+PARAM$exp_input  <- "DR7201"
 
 PARAM$lag1  <- TRUE
 PARAM$lag2  <- TRUE
@@ -49,18 +49,22 @@ PARAM$Tendencias2$ratioavg  <- FALSE
 PARAM$Tendencias2$ratiomax  <- FALSE
 
 
-PARAM$RandomForest$run  <- TRUE
-PARAM$RandomForest$num.trees  <- 20
-PARAM$RandomForest$max.depth  <-  4
-PARAM$RandomForest$min.node.size  <- 1000
-PARAM$RandomForest$mtry  <- 40
-PARAM$RandomForest$semilla  <- 374063    # cambiar por la propia semilla
+PARAM$RandomForest$run <- TRUE
+PARAM$RandomForest$num.trees <- 20
+PARAM$RandomForest$max.depth <- 4
+PARAM$RandomForest$min.node.size <- 1000
+PARAM$RandomForest$mtry <- 40
+PARAM$RandomForest$semilla <- 374063 # cambiar por la propia semilla
+PARAM$RandomForest$splitrule <- "hellinger"
+#PARAM$RandomForest$importance <- "permutation"
+PARAM$RandomForest$sample.fraction <- 0.8
+#PARAM$RandomForest$replace <- FALSE #Si es false el sample fraction cambia por 0.632, si es true prueba con 1.
 
-PARAM$CanaritosAsesinos$ratio  <- 0.0        #varia de 0.0 a 2.0, si es 0.0 NO se activan
+PARAM$CanaritosAsesinos$ratio  <- 1.3        #varia de 0.0 a 2.0, si es 0.0 NO se activan
 PARAM$CanaritosAsesinos$desvios  <- 4.0      #desvios estandar de la media, para el cutoff
 PARAM$CanaritosAsesinos$semilla  <- 374063   # cambiar por la propia semilla
 
-PARAM$home  <- "~/buckets/b1/"
+PARAM$home  <- "~/buckets/b2/"
 # FIN Parametros del script
 
 OUTPUT  <- list()
@@ -223,6 +227,8 @@ AgregaVarRandomForest  <- function( num.trees, max.depth, min.node.size, mtry, s
                      min.node.size= min.node.size,
                      mtry=          mtry,
                      seed=          semilla,
+                     splitrule=     splitrule,
+                     sample.fraction= sample.fraction,
                      num.threads=   1
                    )
 
@@ -498,7 +504,9 @@ if( PARAM$RandomForest$run )
                          max.depth= PARAM$RandomForest$max.depth,
                          min.node.size= PARAM$RandomForest$min.node.size,
                          mtry= PARAM$RandomForest$mtry,
-                         semilla= PARAM$RandomForest$semilla)
+                         semilla= PARAM$RandomForest$semilla,
+                         splitrule = PARAM$RandomForest$splitrule,
+                         sample.fraction = PARAM$RandomForest$sample.fraction)
 
   OUTPUT$AgregaVarRandomForest$ncol_despues  <- ncol(dataset)
   GrabarOutput()
