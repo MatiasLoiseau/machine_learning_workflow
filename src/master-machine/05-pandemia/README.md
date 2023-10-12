@@ -1,4 +1,4 @@
-# Training Strategy
+# Training Strategy -> Contemplando la pandemia
 
 En esta prueba agregué:
 
