@@ -60,7 +60,7 @@ PARAM$CanaritosAsesinos$ratio  <- 0.0        #varia de 0.0 a 2.0, si es 0.0 NO s
 PARAM$CanaritosAsesinos$desvios  <- 4.0      #desvios estandar de la media, para el cutoff
 PARAM$CanaritosAsesinos$semilla  <- 374063   # cambiar por la propia semilla
 
-PARAM$home  <- "~/buckets/b2/"
+PARAM$home  <- "~/buckets/b1/"
 # FIN Parametros del script
 
 OUTPUT  <- list()
@@ -366,7 +366,7 @@ setwd( PARAM$home )
 
 #cargo el dataset donde voy a entrenar
 #esta en la carpeta del exp_input y siempre se llama  dataset.csv.gz
-dataset_input  <- paste0( "./exp/", PARAM$exp_input, "/dataset.csv.gz" )
+dataset_input  <- paste0( "./exp/master-machine/", PARAM$exp_input, "/dataset.csv.gz" )
 
 dataset  <- fread( dataset_input )
 
@@ -374,8 +374,8 @@ colnames( dataset )[ which( !( sapply( dataset, typeof) %in%  c("integer","doubl
 
 
 #creo la carpeta donde va el experimento
-dir.create( paste0( "./exp/", PARAM$experimento, "/"), showWarnings = FALSE )
-setwd(paste0( "./exp/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
+dir.create( paste0( "./exp/master-machine/", PARAM$experimento, "/"), showWarnings = FALSE )
+setwd(paste0( "./exp/master-machine/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
 
 GrabarOutput()
 write_yaml( PARAM, file= "parametros.yml" )   #escribo parametros utilizados

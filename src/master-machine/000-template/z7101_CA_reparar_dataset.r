@@ -19,7 +19,7 @@ PARAM$experimento  <- "CA7101"
 PARAM$dataset  <- "./datasets/competencia_2023.csv.gz"
 
 PARAM$metodo  <- "MachineLearning"     #valores posibles  "MachineLearning"  "EstadisticaClasica" "Ninguno"
-PARAM$home  <- "~/buckets/b2/"
+PARAM$home  <- "~/buckets/b1/"
 # FIN Parametros del script
 
 OUTPUT  <- list()
@@ -224,8 +224,8 @@ dataset[ , tmobile_app := NULL ]
 
 
 #creo la carpeta donde va el experimento
-dir.create( paste0( "./exp/", PARAM$experimento, "/"), showWarnings = FALSE )
-setwd(paste0( "./exp/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
+dir.create( paste0( "./exp/master-machine/", PARAM$experimento, "/"), showWarnings = FALSE )
+setwd(paste0( "./exp/master-machine/", PARAM$experimento, "/"))   #Establezco el Working Directory DEL EXPERIMENTO
 
 GrabarOutput()
 write_yaml( PARAM, file= "parametros.yml" )   #escribo parametros utilizados
